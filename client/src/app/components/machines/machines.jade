@@ -1,0 +1,8 @@
+div.container
+  div(ng-include="'components/navbar/navbar.html'")
+  h1 Machines
+
+  md-list
+    md-list-item.md-2-line(ng-repeat="machine in machines")
+      div.md-list-item-text
+        h3 {{machine.name}}

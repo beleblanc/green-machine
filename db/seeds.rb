@@ -3,5 +3,11 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   cities = City.createde([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Machine.create(
+ [{ name:'Ponsse Fox 2011'},
+  { name:'Ponsse Fox 2013'},
+  { name:'Ponsse Wisent 2005'},
+  { name:'Ponsse Beaver'},
+  { name:'Rottne Forwarder'}])
