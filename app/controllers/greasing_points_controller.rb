@@ -1,0 +1,2 @@
+class GreasingPointsController < ApplicationController
+end

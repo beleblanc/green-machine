@@ -1,10 +1,15 @@
-angular.module 'acforWorkflow', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ngMaterial', 'rails']
+angular.module 'acforWorkflow', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router',
+                                 'ngMaterial','Devise' ,'rails', 'formly']
   .config ($stateProvider, $urlRouterProvider, $locationProvider) ->
     $stateProvider
       .state "home",
         url: "/",
         templateUrl: "app/main/main.html",
-        controller: "MainCtrl"
+        controller: "MainCtrl",
+        controllerAs: "main",
+        resolve: {
+
+        }
       .state "machines",
         url:"/machines",
         templateUrl: "app/components/machines/machines.html",

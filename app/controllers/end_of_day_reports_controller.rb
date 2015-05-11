@@ -1,0 +1,2 @@
+class EndOfDayReportsController < ApplicationController
+end

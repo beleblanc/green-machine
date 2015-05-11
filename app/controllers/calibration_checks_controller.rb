@@ -1,0 +1,2 @@
+class CalibrationChecksController < ApplicationController
+end

@@ -1,7 +1,6 @@
 class MachinesController < ApplicationController
   before_action :set_machine, only: [:show, :edit, :update, :destroy]
 
-  
 
   def index
     @machines = Machine.all

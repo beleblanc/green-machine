@@ -1,0 +1,9 @@
+form(ng-submit="session.createSession()" name="form" role="form" ng-controller="newSessionController as session")
+  md-input-container
+    label Email
+    input(ng-model="session.user.email" type="email" required)
+  md-input-container
+    label Password
+    input(ng-model="session.user.password" type="password" required)
+
+  md-button.md-raised.md-primary(type="submit") Login!

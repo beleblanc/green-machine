@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
-  mount_devise_token_auth_for 'User', at: '/auth'
+
+
+
+
   scope '/api' do
-    resources :morning_reports, except: [:new, :edit]
+    devise_for :users
+    resources :day_reports, except: [:new, :edit] do
+      resources :morning_reports, except: [:new, :edit]
+      resources :greasing_points, except: [:new, :edit]
+      resources :end_of_day_reports, except: [:new, :edit]
+      resources :harvester_head_checks, except: [:new, :edit]
+      resources :carrier_checks, except: [:new, :edit]
+      resources :calibration_checks, except: [:new, :edit]
+    end
     resources :machines, except: [:new, :edit]
   end
   # The priority is based upon order of creation: first created -> highest priority.

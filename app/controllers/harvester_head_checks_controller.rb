@@ -1,0 +1,2 @@
+class HarvesterHeadChecksController < ApplicationController
+end

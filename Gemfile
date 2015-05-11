@@ -4,11 +4,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.4'
 
 gem 'rails-api'
-gem 'devise_token_auth'
-gem 'omniauth'
+gem 'devise'
+
 gem 'spring', :group => :development
 
 gem 'rspec-rails'
+gem 'angular_rails_csrf'
 
 gem 'pg'
 
