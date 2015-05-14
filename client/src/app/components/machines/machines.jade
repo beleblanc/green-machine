@@ -1,8 +1,9 @@
-div.container
-  div(ng-include="'components/navbar/navbar.html'")
+div
   h1 Machines
 
   md-list
-    md-list-item.md-2-line(ng-repeat="machine in machines")
+    md-list-item.md-2-line(ng-repeat="machine in vm.machines")
       div.md-list-item-text
         h3 {{machine.name}}
+
+  md-button(ui-sref="newMachine" class="md-raised") New Machine

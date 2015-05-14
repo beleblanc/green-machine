@@ -2,14 +2,14 @@ angular.module "acforWorkflow"
   .factory "Machine", (RailsResource) ->
     class Machine extends RailsResource
       @configure url: "/api/machines", name: "machine"
-  .factory "DayReport", (RailsResouce) ->
-    class DayReport extends RailsResouce
+  .factory "DayReport", (RailsResource) ->
+    class DayReport extends RailsResource
       @configure url: "/api/day_reports", name: "day_report"
-  .factory "MorningReport", (RailsResouce) ->
-    class MorningReport extends RailsResouce
+  .factory "MorningReport", (RailsResource) ->
+    class MorningReport extends RailsResource
       @configure url: "/api/day_reports/:day_report_id/morning_reports/:id", name: "morning_report"
-  .factory "MorningReport", (RailsResouce) ->
-    class MorningReport extends RailsResouce
+  .factory "MorningReport", (RailsResource) ->
+    class MorningReport extends RailsResource
       @configure url: "/api/day_reports/:day_report_id/morning_reports", name: "morning_report"
   .factory "GreasingPoint", (RailsResource) ->
     class GreasingPoint extends RailsResource
@@ -20,8 +20,8 @@ angular.module "acforWorkflow"
   .factory "HarvesterHeadCheck", (RailsResource) ->
     class HarvesterHeadCheck extends RailsResource
       @configure url: "/api/day_reports/:day_report_id/harvester_head_checks", name: "harvester_head_check"
-  .factory "CarrierCheck", (RailsResouce) ->
-    class CarrierCheck extends RailsResouce
+  .factory "CarrierCheck", (RailsResource) ->
+    class CarrierCheck extends RailsResource
       @configure url: "/api/day_reports/:day_report_id/carrier_checks", name: "carrier_check"
   .factory "CalibrationCheck", (RailsResource) ->
     class CalibrationCheck extends RailsResource
